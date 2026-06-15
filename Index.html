@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spin & Earn Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="bannedScreen" class="hidden">
+        <div class="card error-card">
+            <h1>🛑 ACCOUNT BANNED</h1>
+            <p>Suspicious activity detected. Your account has been suspended.</p>
+        </div>
+    </div>
+
+    <div id="appScreen" class="container">
+        <header class="header">
+            <h2>Balance: <span id="coinBalance" class="highlight">0</span> Coins</h2>
+            <p class="subtitle">100 Coins = ₹10 Paytm/UPI</p>
+        </header>
+
+        <main class="card">
+            <div class="wheel-box">
+                <div id="wheel" class="wheel-circle">SPIN</div>
+            </div>
+            
+            <div class="stats">
+                <p>Spins Left Today: <span id="spinsLeft" class="bold">5</span>/5</p>
+            </div>
+
+            <button id="spinBtn" class="btn primary-btn" onclick="startSpin()">Spin Now (Watch Ad)</button>
+            
+            <div class="withdraw-section">
+                <button id="withdrawBtn" class="btn success-btn" onclick="requestWithdraw()" disabled>Withdraw ₹10</button>
+                <p id="withdrawMsg" class="small-text">Earn 100 coins to unlock</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+    <script src="firebase.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
