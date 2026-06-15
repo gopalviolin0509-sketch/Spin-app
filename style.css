@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #2c3e50;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.subtitle {
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.wheel-box {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.wheel-circle {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.4);
+    transition: transform 1s ease-out;
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background-color: #3498db;
+    color: white;
+}
+
+.primary-btn:hover { background-color: #2980b9; }
+
+.success-btn {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.success-btn:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+.small-text {
+    font-size: 12px;
+    color: #95a5a6;
+    margin-top: 8px;
+}
+
+.hidden { display: none; }
+
+.error-card {
+    color: #e74c3c;
+    border: 2px solid #e74c3c;
+}
